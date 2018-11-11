@@ -101,6 +101,4 @@ noremap <Right> <Nop>
 
 nnoremap <ALT-CR> i<CR><Esc>
 
-" map bclose to Bdelete
-" cnoreabbrev bc Bdelete
 
