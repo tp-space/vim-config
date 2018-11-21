@@ -5,6 +5,9 @@ set nocompatible              " required
 
 
 " ===== Vundle Start =====
+" 1. Install vim:		e.g. apt-get install vim
+" 2. Install Vundle: 		git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" 3: Load plugins in vim:   	:PluginInstall
 
 " temporary disable automatic file type detection (only during vundle processing)
 filetype off
