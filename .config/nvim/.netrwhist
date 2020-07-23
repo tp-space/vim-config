@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/mih/killme/tp/vim-config'
+let g:netrw_dirhist_8='/media/sf_git/dsv-suite'
+let g:netrw_dirhist_7='/home/mih/.config/nvim'
+let g:netrw_dirhist_6='/home/mih/.config/nvim/config-plugged'
+let g:netrw_dirhist_5='/home/mih/.config/nvim'
+let g:netrw_dirhist_4='/home/mih/.config/nvim/plug-config'
+let g:netrw_dirhist_3='/home/mih/.config/nvim'
+let g:netrw_dirhist_2='/home/mih/.config'
+let g:netrw_dirhist_1='/home/mih/.config/coc'
+let g:netrw_dirhist_0='/home/mih/.config/coc/ultisnips'
