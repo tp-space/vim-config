@@ -149,6 +149,12 @@ nnoremap <leader>h :call CurrentWordHighlightingToggle()<Cr>
 " Toggle between split and full screen window
 nnoremap Z  :call CurrentZoomToggle()<Cr>
 
+" Quickly execute a macro recorded with qq
+nnoremap Q @q 
+
+" Use double bang to store using sudo
+" FIXME cnoremap w!! w :term sudo tee % >/dev/null
+
 " After shifting a visual selection with < or >,
 " the selection is lost. So this mapping re-selects
 " the just shifted block again
@@ -222,9 +228,8 @@ source ~/.config/nvim/config-plugged/vdebug.vim
 " What we do is to disable Capslock and then to remap it to Escape.
 " Note this change will persist while using and after leaving vim.
 " Also note, this mapping relies on the existance of xmodmap on your system.
-" Personally, I prefer to use jj as ESC, as it is much easier to setup on a foreign machine 
-autocmd VimEnter * silent! !xmodmap -e 'clear Lock' 
-"autocmd VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+" Personally, I prefer to use jj as ESC rather than capslock, as it is much easier to setup on a foreign machine 
+autocmd VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 " Highlights trailing white spaces in python and C
 " FIXME: use linter and fixers instead
