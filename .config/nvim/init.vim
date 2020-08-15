@@ -82,6 +82,11 @@ Plug 'vim-vdebug/vdebug' " requires Python3
 " adds git support to vim 
 Plug 'tpope/vim-fugitive'
 
+" Easy toggle between single to multiliner (e.g. argument or coma separated lists)
+" - gS : splits argumets
+" - gJ : joins argumets
+Plug 'AndrewRadev/splitjoin.vim'
+
 call plug#end()
 
 " =============================== Configure nvim providers =================

@@ -1,0 +1,7 @@
+# enable vi mode in bash cli
+set -o vi
+
+# set default editor
+EDITOR=nvim
+
+
