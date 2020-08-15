@@ -4,6 +4,7 @@ set -o vi
 bind '"jj":"\e"'
 
 # set default editor
-export EDITOR=nvim
+export VISUAL=nvim
+export EDITOR=$VISUAL
 
 
