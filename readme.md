@@ -1,10 +1,10 @@
-# How to setup vim+tmux+bash config on a new machine
+# New vim+tmux+bash config setup
 1. mkdir ~/.dotfiles
 1. cd ~/.dotfiles
 1. git clone https://github.com/tp-space/vim-config.git .
 1. bash setup.sh
 
-# Install NVIM from source
+# Install nvim from source
 Within an empty folder, do:
 1. git clone https://github.com/neovim/neovim.git
 1. cd neovim
@@ -12,7 +12,7 @@ Within an empty folder, do:
 1. make CMAKE\_BUILD\_TPYE=RelWithDebInfo
 1. sudo make install
 
-Major required build tools: autoconf automake cmake g++."
+Major required build tools: autoconf automake cmake g++.
 
 # Launch nvim the first time
 1. Make sure to exit all existing vim, tmux and bash instances
@@ -24,14 +24,14 @@ Major required build tools: autoconf automake cmake g++."
 
 Now your are all set.
 
-# Commit changes to github
-First you need to provide information about the user committing the changes.
-To configure the git settings, enter below command:
+# Commit changes
+First you need to provide information about the git user.
+To configure the settings, enter below commands:
 - git config --\<flag\> user.name "\<name\>"
 - git config --\<flag\> user.email "\<email\>"
 
 The flag can be set to _local_, _global_ or _system_. The default value is _local_.
 
 You can't use nvim to push the repository to github (no iterative session to receive pwd).
-So just type in the bash: git push origin master
+\So just type in the bash: git push origin master
 
