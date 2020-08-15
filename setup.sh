@@ -25,6 +25,8 @@ tools=(
     "node"
     "npm"
     "yarn"
+    "fzf"
+    "rg"
     "bash")
 
 # check if tools are installed
@@ -53,7 +55,7 @@ printf "Python3 bindings have been installed.\n"
 
 # install python bindings
 printf "Installing npm bindings ...\n"
-npm install -g neovim
+npm install neovim
 printf "Npm bindings have been installed.\n"
 
 # cleanup nvim config folders
