@@ -87,6 +87,9 @@ Plug 'tpope/vim-fugitive'
 " - gJ : joins argumets
 Plug 'AndrewRadev/splitjoin.vim'
 
+" Adds colorscheme
+Plug 'morhetz/gruvbox'
+
 call plug#end()
 
 " =============================== Configure nvim providers =================
@@ -139,6 +142,8 @@ set mouse-=a
 " Sets code max length to 120 characters (with dark-greyed vertical bar)
 set colorcolumn=120
 hi ColorColumn ctermbg=darkGrey guibg=darkGrey
+
+colorscheme gruvbox
 
 " =============================== General KeyMappings =================
 
