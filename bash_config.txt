@@ -1,5 +1,6 @@
 # enable vi mode in bash cli
 set -o vi
+
 # map jj to ESC key
 bind '"jj":"\e"'
 
