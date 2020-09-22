@@ -152,6 +152,7 @@ let mapleader = " "
 
 " Map jj to <ESC>
 inoremap jj <ESC>
+tnoremap JJ <C-\><C-n>
 
 " Toggle current word highlighing
 nnoremap <leader>h :call CurrentWordHighlightingToggle()<Cr>

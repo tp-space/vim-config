@@ -8,6 +8,5 @@ bind '"jj":"\e"'
 export VISUAL=nvim
 export EDITOR=$VISUAL
 
-tmux
 
 
