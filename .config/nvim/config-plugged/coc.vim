@@ -1,6 +1,6 @@
 " list the extentions to be loaded
 let g:coc_global_extensions = [ 
-  \ 'coc-ultisnips', 
+  \ 'coc-snippets', 
   \ 'coc-json', 
   \ 'coc-tsserver', 
   \ 'coc-html', 
@@ -20,9 +20,11 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
-" Use TAB to expand snippet and jump to next placeholder
-imap <TAB> <Plug>(coc-snippets-expand)
-let g:coc_snippet_next = '<TAB>' 
+" Use Ctrl+l to expand snippet and jump to next placeholder
+imap <C-l> <Plug>(coc-snippets-expand)
+
+"user Ctrl j and k to jump between placeholders
+let g:coc_snippet_next = '<c-l>' 
 
 " Trigger suggestion list for autocompletion
 inoremap <silent><expr> <c-space> coc#refresh()

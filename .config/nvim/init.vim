@@ -105,17 +105,21 @@ filetype plugin indent on
 " enables syntax highlighting (depending on filetype) 
 set syntax=on		
 
-" performs case insensitive search if search expression has no uppoer case letters
+" performs case insensitive search if search expression has no upper case letters
 " performs case sensitive search otherwise
 set smartcase
 
 " enables incremental search (find while typing search term)
 set incsearch
 
-" set default indention
+" set default indention 
+" tabstop: tells vim how wide (columns) a tab (ascii 0x09) should be represented
+" softtabstop: tells vim by how many column the cursor shall be moved when hitting the tab or backspace key 
+" expandtab: when enabled and hitting the tab key, spaces are inserted instead of the tab character (ascii 0x09)
+" shiftwidth: tells vim the width of indent (e.g. when using << or >> )
+" smarttab: 
+" Set default to 'everything is 4 spaces'
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
-" FIXME
-autocmd BufRead,BufNewFile *.sh set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 " tell vim that background is dark => load optimized color scheme for dark background 
 set background=dark
@@ -142,6 +146,12 @@ set mouse-=a
 " Sets code max length to 120 characters (with dark-greyed vertical bar)
 set colorcolumn=120
 hi ColorColumn ctermbg=darkGrey guibg=darkGrey
+
+" opens split on the right side when using C-w + v
+set splitright
+
+" opens split below when using C-w + s
+set splitbelow
 
 colorscheme gruvbox
 
@@ -240,15 +250,20 @@ source ~/.config/nvim/config-plugged/vdebug.vim
 " Note this change will persist while using and after leaving vim.
 " Also note, this mapping relies on the existance of xmodmap on your system.
 " Personally, I prefer to use jj as ESC rather than capslock, as it is much easier to setup on a foreign machine 
-autocmd VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+" autocmd VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 
 " Highlights trailing white spaces in python and C
 " FIXME: use linter and fixers instead
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match ExtraWhitespace /\s\+$/
 
-"autocmd BufRead,BufNewFile *.vue set ft=html
+" set default file types
+autocmd BufRead,BufNewFile *.blade.php set ft=html ts=4 sts=0 expandtab sw=4 nosmarttab
+autocmd BufRead,BufNewFile *.vue set ft=html
 " autocmd BufRead,BufNewFile *.docker set ft=dockerfile
 " autocmd Filetype php setlocal omnifunc=phpactor#Complete
 
 
+
+" set default indention for various file types
+autocmd BufRead,BufNewFile *.sh set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 

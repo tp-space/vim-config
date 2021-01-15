@@ -1,4 +1,4 @@
-**/nvim/plugged
-**/nvim/.*
-node_modules/*
-package-lock.json
+/.config/nvim/autoload/*
+!/.config/nvim/autoload/plug.vim
+/node_modules/
+/package-lock.json
